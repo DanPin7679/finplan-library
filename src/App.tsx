@@ -2,7 +2,7 @@ import { useAppSelector } from "./store/hooks";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { lightTheme, darkTheme } from "./theme/themes";
 import { CustomThemes } from "./store/uiState/ui-data-models";
-import Layout from "./layout/layout";
+import Layout from "./layout/Layout";
 
 const App = () => {
   const customTheme = useAppSelector((state) => state.ui.customTheme);

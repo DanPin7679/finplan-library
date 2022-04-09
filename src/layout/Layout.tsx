@@ -1,9 +1,7 @@
 import { Typography } from "@mui/material";
 import * as React from "react";
 import { useSelector } from "react-redux";
-import Module1 from "./Module1";
-import Module2 from "./Module2";
-import Module3 from "./Module3";
+import Library from "../library/Library";
 import styles from "./Layout.module.css";
 import Settings from "./components/Settings";
 import ButtonAppBar from "./components/NavBar";
@@ -33,9 +31,8 @@ export default function Layout() {
       </div>
       <div className={styles.mainContent}>
         <Routes>
-          <Route path="/" element={<Module1 />} />
-          <Route path="tools" element={<Module2 />} />
-          <Route path="dashboard" element={<Module3 />} />
+          <Route path="/" element={<Library />} />
+          <Route path="library" element={<Library />} />
         </Routes>
       </div>
       <div className={styles.settings}>
